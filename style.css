@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(4, 65, 87);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    background: #0f172a;
+    color: whitesmoke;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+/* Login & Sign Up Buttons */
+.auth-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.login-btn {
+    text-decoration: none;
+   background: white;
+    color: black;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+   background: #0ea5e9;
+}
+
+.signup-btn {
+    text-decoration: none;
+    background: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.signup-btn:hover {
+    background: #0ea5e9;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .auth-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .login-btn,
+    .signup-btn {
+        width: 180px;
+        text-align: center;
+    }
+}
+.formbox {
+    margin:auto;
+    width: 430px;
+    padding: 30px;
+    border: 2px solid wheat;
+    border-radius: 9px;
+    color:black;
+    background-color: white;
+    box-shadow: 0px 0px 10px white;
+}
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;   
+}
+.form-row label {
+    font-size: 17px;
+    width: 140px;
+}
+.email {
+    width: 250px;
+    height: 45px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.password {
+    width: 250px;
+    height: 45px;
+    border-radius: 20px;
+    padding: 10px;
+}
+.button-group {
+    text-align: center;
+    margin-top: 15px;
+}
+.button1 {
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    border: 1px solid black;
+    color: black;
+    background-color: rgb(35, 225, 35);
+    font-weight: bold;   
+}
+.button1:hover {
+    background-color: green;
+    color: white;
+}
