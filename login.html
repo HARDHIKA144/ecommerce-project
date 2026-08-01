@@ -1,28 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LOGIN FORM</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Login</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <div class="formbox">
-  <form>
-<h1 style="text-align:center;">LOGIN FORM</h1><br>
-    <div class="form-row">
-      <label><b>Email</b></label>
-      <input  class="email" type="email" placeholder="Enter your email" required>
-    </div>
-    <div class="form-row">
-      <label><b>Password</b></label>
-      <input  class="password" type="password" placeholder="Enter your password"pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*]).{6,}"
-  title="Password must contain at least 1 uppercase letter, 1 lowercase letter, numbers and 1 special character"required>
-    </div>
-    <div class="button-group">
-      <button class="button1" type="submit">Submit</button>
-    </div>
-  </form>
+    <form>
+
+        <h1 style="text-align:center;">Welcome to Our Store</h1><br>
+        <p style="text-align:center;">
+            Log in to explore amazing deals and offers.
+        </p>
+        <br>
+         <br>
+        <div class="form-row">
+            <label><b>Email</b></label>
+            <input
+                class="email"
+                type="email"
+                placeholder="Enter your email"
+                required>
+        </div>
+
+        <div class="form-row">
+            <label><b>Password</b></label>
+            <input
+                class="password"
+                type="password"
+                placeholder="Enter your password"
+                pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*]).{6,}"
+                title="Password must contain at least 1 uppercase letter, 1 lowercase letter, 1 number, and 1 special character"
+                required>
+        </div>
+
+        <div class="button-group">
+            <button class="button1" type="submit">Login</button>
+        </div><br>
+        <p style="text-align:center;">
+    <a href="forgotpassword.html">Forgot Password?</a>
+</p>
+<br>
+<p style="text-align:center;">
+    Don't have an account?
+    <a href="signup.html">Sign Up</a>
+</p>
+
+    </form>
 </div>
+
 </body>
 </html>
